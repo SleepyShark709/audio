@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music PLayer CSS + HTML</title>
+    <link rel="stylesheet" href="audio.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="container">
+
+    <audio id="id-audio-play" src="1.mp3"></audio>
+
+    <div class="musiclist" data-songs="3" data-active="0">
+        <div class="songs" id="audio-0" data-src="1.mp3"></div>
+        <div class="songs" id="audio-1" data-src="2.mp3"></div>
+        <div class="songs" id="audio-2" data-src="3.mp3"></div>
+    </div>
+
+    <div class="songname" data-names="3" data-active="0">
+        <div class="names" id="name-0" data-name="SleepyWood"></div>
+        <div class="names" id="name-1" data-name="RestNPeace"></div>
+        <div class="names" id="name-2" data-name="DragonDream"></div>
+    </div>
+
+    <div id="player">
+        <div class="caratula">
+            <img src="唱片.png">
+            <div class="more">
+                <div class="icon-info"></div>
+            </div>
+            <div class="bio">
+                <h2>播放器介绍</h2>
+                <p>这是音频播放器</p>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="outer">
+                <div class="inner">
+                    <img src="播放钮.png" alt="播放钮" class="dot" draggable="false">
+<!--                    <div class="dot"></div>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="love">
+                <div class="icon-heart"></div>
+                <div class="icon-star-empty"></div>
+            </div>
+            <div class="elapsed">音乐时长：</div>
+            <h2 class="h2">SleepyWood</h2>
+            <h3>演唱者：未知</h3>
+        </div>
+
+        <div class="controls">
+            <ul>
+                <li class="backward" data-offset="-1"><div class="icon-backward btn"></div></li>
+                <li class="pause"><div class="icon-pause btn"></div></li>
+                <li class="play"><div class="icon-play btn"></div></li>
+                <li class="stop"><div class="icon-stop btn"></div></li>
+                <li class="forward" data-offset="1"><div class="icon-forward btn"></div></li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="shark.js"></script>
+<script src="audio.js"></script>
+
+</body>
+</html>
